@@ -1,17 +1,27 @@
+H1 H2 H3 H4 H5 H6 {
+    font-family: DM Serif Display;
+}
+p {
+    font-family: Helvetica;
+}
+li {
+    font-family: DM Serif Display;
+}
 header .inline-block {
     display: inline-block;
     vertical-align: top;
+    background-color: teal;
 }
 .logo {
     width: 23%;
     padding: 1%;
     text-align: center;
-    background-color: tomato;
+    float: left;
 }
 nav {
     width: 73%;
     padding: 1%;
-    background-color: teal;
+    float: right;
 }
 nav ul {
     width: 50%;
@@ -20,15 +30,116 @@ nav ul {
 .heroImg {
     height: 600px;
     padding: 25px;
+    background-color: tomato;
 }
 .heroImg .content {
     width: 500px;
-    margin: 0 auto;
+    margin: 10% auto;
+}
+.content img {
+    margin-left: 10%;
+}
+.content button {
+    margin-left: 40%;
 }
 footer {
-    background-color: #373738; 
+    background-color: teal; 
 }
 footer .inline-block {
     display: inline-block;
     padding: 20px;
+}
+.flexContainer {
+    display: flex;
+    width: 33% 33% 33%;
+    margin: 10px;
+    padding: 10px;
+}
+.flexContainer div {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+.mySkills {
+    margin: auto;
+    padding: 20px;
+}
+.myWork {
+    margin: auto;
+    padding: 20px;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'doiPic doiText'
+    'divvyText divvyPic'
+    'morcPic morcText';
+}
+.doiPic {
+    grid-area: doiPic;
+    justify-self: center;
+    margin: auto;
+    padding: 20px;
+}
+.doiText {
+    grid-area: doiText;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+    padding: 20px;
+}
+.divvyPic {
+    grid-area: divvyPic;
+    justify-self: center;
+    margin: auto;
+    padding: 20px;
+}
+.divvyText {
+    grid-area: divvyText;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+    padding: 20px;
+}
+.morcPic {
+    grid-area: morcPic;
+    justify-self: center;
+    margin: auto;
+    padding: 20px;
+}
+.morcText {
+    grid-area: morcText;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+    padding: 20px;
+}
+@media only screen and (max-width: 600) {
+.flexContainer {
+    flex-direction: column;
+}
+.flexA {
+    width: 100%;
+}
+.flexB {
+    width: 100%;
+}
+.flexC {
+    width: 100%;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    'doiPic' 
+    'doiText'
+    'divvyText' 
+    'divvyPic'
+    'morcPic' 
+    'morcText';
+}
 }
