@@ -27,6 +27,11 @@ nav ul {
     width: 50%;
     margin-left: auto;
 }
+header li {
+    display: inline-block;
+    padding: 0px 5px;
+    color: white;
+}
 .heroImg {
     height: 600px;
     padding: 25px;
@@ -48,6 +53,9 @@ footer {
 footer .inline-block {
     display: inline-block;
     padding: 20px;
+}
+footer li {
+    color: white;
 }
 .flexContainer {
     display: flex;
